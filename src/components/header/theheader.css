@@ -1,0 +1,8 @@
+.header{
+  background-color: var(--bgr-header);
+  height: var(--height-header);
+  padding: 20px 50px;
+}
+.header-name{
+  font-size: 300%;
+}

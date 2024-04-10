@@ -1,0 +1,69 @@
+.home-wrapper{
+  margin: 0 20px 0px 220px;
+  transition: 0.3s;
+}
+.home-tile{
+  background-color: var(--color-text);
+  height: 90px;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+.home-tile-text{
+  font-size: 200%;
+  color: var(--bgr-header);
+}
+.icon-bar-content{
+  display: none;
+}
+.list-icon{
+  width: 22px !important;
+  filter:brightness(60%);
+}
+.home-list-item{
+  background: var(--bgr-menu);
+  margin-bottom:10px;
+  height: 100px;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  border-radius:10px;
+}
+.home-list-item-content-name{
+  font-size: 150%;
+  text-align: center;
+}
+.icon-edit,
+.icon-delete,
+.icon-unimportant,
+.icon-important,
+.icon-add
+{
+  cursor: pointer;
+}
+.icon-edit{
+  margin-right: 20px;
+}
+.icon-add{
+  margin-right: 10px;
+}
+.m-menu-change{
+  margin: 0 20px 0px 75px;
+  transition: 0.3s;
+}
+.form-content > * {
+  margin-bottom: 15px;
+}
+.btn-add:hover{
+  background: var(--bgr-header);
+}
+.ms-button:hover {
+  background: var(--bgr-header);
+}
+.warning__delete-btn{
+  justify-content: end;
+}
+.form-edit-deadline-date,
+.form-create-deadline-date{
+  padding:0 10px;
+}
