@@ -3,69 +3,66 @@ const constants = {
    * List item sidebar
    *
    */
-  SidebarMenu: [
+  Menu: [
     {
-      text: "MYDAY",
-      classIcon: "icon-overview",
+      text: "All Inboxes",
       path: "/",
     },
 
     {
-      text: "IMPORTANT",
-      classIcon: "icon-unimportant",
-      path: "/important",
+      text: "Sent",
+      path: "/sent",
     },
 
     {
-      text: "CALENDAR",
-      classIcon: "icon-deposits",
-      path: "/calendar",
+      text: "Trash",
+      path: "/trash",
     },
   ],
   /**
    * List item pageSize
    *
    */
-  listNavigateNumber: [
-    {
-      id: 10,
-      value: "10 bản ghi trên 1 trang",
-    },
-    {
-      id: 20,
-      value: "20 bản ghi trên 1 trang",
-    },
-    {
-      id: 30,
-      value: "30 bản ghi trên 1 trang",
-    },
-    {
-      id: 50,
-      value: "50 bản ghi trên 1 trang",
-    },
-    {
-      id: 100,
-      value: "100 bản ghi trên 1 trang",
-    },
-  ],
-  /**
-   * List item pageSize
-   *
-   */
-  listStatusFilterImport: [
-    {
-      id: 3,
-      value: "Tất cả",
-    },
-    {
-      id: 1,
-      value: "Không hợp lệ",
-    },
-    {
-      id: 2,
-      value: "Hợp lệ",
-    },
-  ],
+  // listNavigateNumber: [
+  //   {
+  //     id: 10,
+  //     value: "10 bản ghi trên 1 trang",
+  //   },
+  //   {
+  //     id: 20,
+  //     value: "20 bản ghi trên 1 trang",
+  //   },
+  //   {
+  //     id: 30,
+  //     value: "30 bản ghi trên 1 trang",
+  //   },
+  //   {
+  //     id: 50,
+  //     value: "50 bản ghi trên 1 trang",
+  //   },
+  //   {
+  //     id: 100,
+  //     value: "100 bản ghi trên 1 trang",
+  //   },
+  // ],
+  // /**
+  //  * List item pageSize
+  //  *
+  //  */
+  // listStatusFilterImport: [
+  //   {
+  //     id: 3,
+  //     value: "Tất cả",
+  //   },
+  //   {
+  //     id: 1,
+  //     value: "Không hợp lệ",
+  //   },
+  //   {
+  //     id: 2,
+  //     value: "Hợp lệ",
+  //   },
+  // ],
   /**
    * Regex
    *

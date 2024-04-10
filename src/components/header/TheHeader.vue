@@ -1,16 +1,16 @@
-<template>
+ <template>
   <div class="header flex jtf-between ">
     <div class="header-left ">
-      <p class="header-name cl-white">Safe Email</p>
-      <P class="header-title cl-white">Sent private email to everyone</P>
+      <div class="header-name cl-white">SAFE EMAIL</div>
+      <div class="header-title cl-white">Sent private email to everyone</div>
     </div>
-    <div class="header-right flex jtf-between">
-      <div class="avt">
+    <div class="header-right flex jtf-between item-center">
+      <div class="avt mr-10">
         <img src="../../assets/img/header-avt.png" alt="">
       </div>
       <div class="avt-info">
-        <p class="avt-name cl-white">truong27</p>
-        <p class="avt-address cl-white">hs1q8av7vh...</p>
+        <div class="avt-name cl-white">truong27</div>
+        <div class="avt-address cl-white">hs1q8av7vh...</div>
       </div>
     </div>
   </div>

@@ -1,0 +1,28 @@
+.list-item{
+  text-decoration: none;
+  font-size: 150%;
+  color: black;
+  align-items: center;
+}
+.home-menu{
+  width: 280px;
+  height: 100%;
+}
+
+.menu-box{
+  background-color: var(--bgr-menuitem);
+  height: 280px;
+  padding: 50px;
+}
+.circle {
+  width: 15px;          
+  height: 15px;         
+  background-color: var(--bgr-header); 
+  border-radius: 50%; 
+  position: absolute;
+  left: 123px;
+  display: flex;
+}
+.list-item.active{
+  color: var(--bgr-header);
+}

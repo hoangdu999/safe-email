@@ -20,6 +20,9 @@
 :root {
   --bgr-header : #aab6d0;
   --height-header :120px;
+  --bgr-menuitem: #f3f4f6;
+  --btn-hover: red;
+  --btn-active:  #7d90bb;
 }
 * {
   margin: 0;
@@ -32,7 +35,7 @@ body {
   width: 100%;
   position: relative;
 }
-a{
+a,p{
   text-decoration: none;
 }
 li {
@@ -56,6 +59,15 @@ img {
 }
 .text-center{
   text-align: center;
+}
+.item-center{
+  align-items:center;
+}
+.bd-radius15{
+  border-radius: 15%;
+}
+.bd-radius20px{
+  border-radius: 20px;
 }
 .w-100{
   width: 100%;
@@ -84,11 +96,44 @@ img {
 .mb-12{
   margin-bottom: 12px;
 }
+.mb-25{
+  margin-bottom: 25px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
 .mr-10{
+  margin-right: 10px;
+}
+.mr-20{
   margin-right: 10px;
 }
 .mr-50{
   margin-right: 50px;
+}
+.pt-10{
+  padding-top: 10px;
+}
+.pt-20{
+  padding-top: 10px;
+}
+.pt-30{
+  padding-top: 10px;
+}
+.pt-40{
+  padding-top: 10px;
+}
+.pr-10{
+  padding-right: 10px;
+}
+.pr-20{
+  padding-right: 20px;
+}
+.pr-30{
+  padding-right: 30px;
+}
+.pr-40{
+  padding-right: 40px;
 }
 .h-30{
   height: 30px;

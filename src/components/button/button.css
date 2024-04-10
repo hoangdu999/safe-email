@@ -1,10 +1,9 @@
 .m-btn{
     font-size: 13px;
-    background-color: var(--btn-primary);
     color: #ffffff;
     border: none;
     /* outline: none; */
-    border-radius: 3px;
+    /* border-radius: 3px; */
     text-align: center;
     padding: 0  16px;
     height: var(--height-default);
@@ -13,12 +12,13 @@
     height: var(--height-default);
     font-family: inherit;
     min-width: 80px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.m-btn:hover{
+.m-btn :hover{
     background-color: var(--btn-hover);
 }
 .m-btn:active{
-    background-color: var(--bgr-header);
+    background-color: var(--btn-active);
 } 
 /* btn close */
 .m-btn.close{

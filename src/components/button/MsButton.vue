@@ -12,7 +12,8 @@
           color : color ,
           padding: padding ,
           margin: margin,
-          border : border
+          border : border,
+          fontSize: fontSizeButton,
       }"
       :class="{close : typeBtn === 'close',delete :  typeBtn === 'delete','disabled-btn' :disabled }"
       @click="onClick"
@@ -35,6 +36,7 @@
         String,
         default: "1px solid rgba(0,0,0,.26)"
       },
+      fontSizeButton:String,
       typeBtn: String,
       margin : String,
       disabled : Boolean,
