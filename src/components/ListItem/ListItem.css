@@ -1,0 +1,51 @@
+
+.box-icon{
+  text-align: right;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.warning__delete-btn{
+  justify-content: end;
+}
+.list-item{
+  border-radius: 20px;
+  cursor: pointer;
+}
+.list-box{
+  padding: 10px 10px 10px 20px ;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.list-item:hover{
+  background-color: var( --bgr-menuitem);
+}
+.item-avt{
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+.item-name{
+  margin: 10px 0;
+}
+.item-text{
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+.item-avt{
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+.item-name{
+  margin: 10px 0;
+}
+.item-text{
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}

@@ -1,7 +1,8 @@
-.home{
+.trash{
+  height: calc(100vh - var(--height-header) - var(--paddingtop-content)*2);
+  overflow: hidden;
   margin-left: 40px;
 }
-
 .content-list{
   height: calc(100vh - var(--height-deleteall) - var(--margin-deleteall) - var(--height-header) - var(--paddingtop-content)*2) !important;
   overflow-y:auto;

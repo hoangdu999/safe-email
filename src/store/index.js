@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 const state = reactive({
-  toggleSidebar: true,
+  IsShowContent: false,
 });
 export default {
   state,

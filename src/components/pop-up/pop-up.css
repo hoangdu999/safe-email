@@ -1,0 +1,47 @@
+.m-pup-up-main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 14;
+    transition: 0.5s;
+}
+.m-pop-up{
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+}
+
+.pop-up__title-default{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1F1F1F;
+    margin-bottom: 15px;
+}
+.m-pop-up__footer{
+    margin-top: 24px;
+}
+.m-pup-up-main.close-btn .m-pop-up-close{
+    display: none;
+}
+.m-pop-up-close{
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    cursor: pointer;
+}
+.warning__delete-content{
+    align-items: center;
+    justify-content: center;
+}
+.m-pop-up__header-popup{
+    display: flex;
+    align-items: center;
+    padding:20px 24px;
+}

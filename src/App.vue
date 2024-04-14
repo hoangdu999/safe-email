@@ -1,13 +1,14 @@
 <template>
   <div>
     <the-header />
-    <div class="content">
-        <div class="menu">
-          <the-menu v-if="shouldHideSidebar"></the-menu>
+    <div class="content flex">
+        <div class="menu"  v-if="shouldHideSidebar">
+          <the-menu></the-menu>
         </div>
-        <div class="content-container">
+        <div class="content-container w-100">
           <router-view />
         </div>
+   
     </div>
   </div>
 </template>
@@ -40,6 +41,9 @@ export default{
 <style>
 @import url(./assets/css/index.css);
 .content{
-  padding: 50px 100px;
+  padding: var(--paddingtop-content) 100px;
+}
+.menu{
+  flex-basis: 25%;
 }
 </style>

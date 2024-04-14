@@ -1,22 +1,22 @@
 <template>
-  <div class="home">
+  <div class="sent">
     <the-delete-box></the-delete-box>
     <div class="content-list">
-      <list-item v-for="(item,index) in Const.ListAll" :key="index" :item="item" :index="index"></list-item>
+      <list-item v-for="(item,index) in Constant.ListSent" :key="index" :item="item" :index="index"></list-item>
     </div>
   </div>
 </template>
 <script>
-import constants from '../../assets/js/constants';
 import TheDeleteBox from '../../components/deleteallbox/TheDeleteBox.vue';
+import constants from '../../assets/js/constants';
 import ListItem from '../../components/ListItem/ListItem.vue';
 export default {
-  components: { ListItem, TheDeleteBox },
-  name: 'SafeEmailTheHome',
+  components: { ListItem ,TheDeleteBox},
+  name: 'SafeEmailTheSent',
 
   data() {
     return {
-      Const:constants,
+      Constant: constants
     };
   },
 
@@ -26,11 +26,10 @@ export default {
 
   methods: {
     DeleteAll() {
-
+    },
   },
-}
 };
 </script>
 <style scoped>
-@import url(./thehomecss.css);
+@import url(./TheSentcss.css);
 </style>

@@ -21,8 +21,13 @@
   --bgr-header : #aab6d0;
   --height-header :120px;
   --bgr-menuitem: #f3f4f6;
-  --btn-hover: red;
-  --btn-active:  #7d90bb;
+  --paddingtop-content: 50px;
+  --width-popup:900px;
+  --height-default: 34px;
+  --btn-active: #484883;
+  --btn-primary: #5d5ba4;;
+  --height-deleteall:40px;
+  --margin-deleteall:50px
 }
 * {
   margin: 0;
@@ -42,7 +47,6 @@ li {
   list-style-type: none;
 }
 img {
-  height: 100%;
   width: 100%;
 }
 .flex{
@@ -102,6 +106,9 @@ img {
 .mb-30{
   margin-bottom: 30px;
 }
+.ml-15{
+  margin-left: 15px;
+}
 .mr-10{
   margin-right: 10px;
 }
@@ -160,4 +167,7 @@ img {
 }
 .cl-white{
   color: white;
+}
+.hidden{
+  display: none;
 }

@@ -2,6 +2,7 @@
   background-color: var(--bgr-header);
   height: var(--height-header);
   padding: 20px 100px;
+  width: 100%;
 }
 .header-name{
   font-size: 300%;
