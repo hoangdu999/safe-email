@@ -2,7 +2,7 @@
   <div class="sent">
     <the-delete-box></the-delete-box>
     <div class="content-list">
-      <list-item v-for="(item,index) in Constant.ListSent" :key="index" :item="item" :index="index"></list-item>
+      <list-item v-for="(item,index) in Constant.sent" :key="index" :item="item" :index="index"></list-item>
     </div>
   </div>
 </template>

@@ -1,6 +1,7 @@
 <template>
-  <li class="list-item" @click="ShowContent(item)">
-    <div class="list-box flex-jc">
+  <li class="list-item" :key="index" @click="SelectItem(index)" :class="{ 'is-selected': IsSelected }">
+    <div class="list-box flex-jc"   :key="index" @click="ShowContent(item,index)" 
+    >
       <div class="item-left flex">
         <div class="item-avt">
           <img :src="item.avt" alt="" />
@@ -9,17 +10,17 @@
           <div class="item-name">
             {{ item.name }}
           </div>
-          <div class="item-text">
+          <div class="item-text" :style="{maxWidth:maxWWidthText}">
             {{ item.content }}
           </div>
         </div>
       </div>
-      <div  class="item-right">
+      <div v-if="!Iscollapse" class="item-right" >
         <div class="item-time">
           {{ item.time }}
         </div>
-        <div class="box-icon flex">
-          <div class="icon-delete"  @click.stop="ShowMessDelete(index)"></div>
+        <div class="box-icon flex" @click.stop="ShowMessDelete(index)">
+          <font-awesome-icon :icon="['far', 'trash-can']"  class="delete-icon" />
         </div>
       </div>
     </div>
@@ -52,6 +53,10 @@ export default {
   components: { MPopUpWarn,MsButton },
   name: "SafeEmailTheHome",
   props: {
+    IsSelected:{
+      type:Boolean,
+      default :false,
+    },
     index:{
       type:Number,
       required:true
@@ -60,15 +65,20 @@ export default {
       type: Object,
       required: true
     },
-    IsShowContent:{
+    Iscollapse:{
       type:Boolean,
       default :false
+    },
+    maxWWidthText:{
+      type:String,
+      default :"800px"
     }
   },
   data() {
     return {
       IsShowMessDelete: false,
       IndexItem: null,
+      selectedItemIndex: null,
     };
   },
 
@@ -81,18 +91,25 @@ export default {
   DeleteItem(index){
 
   },
+  SelectItem(selectedIndex) {
+    const items = this.$parent.$el.querySelectorAll('.list-item');
+    items.forEach((item) => {
+        item.classList.remove('is-selected');
+    });
+    items[selectedIndex].classList.add('is-selected');
+  },
   ShowContent(item){
-    const listType = this.getListType(item);
+    const listType = this.getListType();
     const itemId = item.id;
     this.$router.push({ name: 'Content', params: { listType: listType, itemId: itemId } });
   },
-  getListType(item) {
+  getListType() {
     if (this.$route.path.includes('/sent')) {
-      return 'ListSent';
+      return 'sent';
     } else if (this.$route.path.includes('/trash')) {
-      return 'ListTrash';
+      return 'trash';
     } else {
-      return 'ListAll'; 
+      return 'all'; 
     }
   }
 }

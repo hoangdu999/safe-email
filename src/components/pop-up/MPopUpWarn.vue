@@ -20,7 +20,7 @@
         class="m-pop-up-close"
         :class="iconCloseClass"
         :data-tip-icon="dataTipIcon"
-        @click="closePopUp"
+        @click.stop="closePopUp"
       ></div>
     </div>
   </div>

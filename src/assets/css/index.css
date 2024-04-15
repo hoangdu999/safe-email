@@ -21,13 +21,16 @@
   --bgr-header : #aab6d0;
   --height-header :120px;
   --bgr-menuitem: #f3f4f6;
-  --paddingtop-content: 50px;
+  --paddingtop-content: 30px;
   --width-popup:900px;
+  --fonsize-backicon: 53px;
+  --color-hoverbackicon: #5a6b92;
   --height-default: 34px;
   --btn-active: #484883;
-  --btn-primary: #5d5ba4;;
+  --btn-primary: #5d5ba4;
   --height-deleteall:40px;
-  --margin-deleteall:50px
+  --margin-deleteall:50px;
+  
 }
 * {
   margin: 0;
@@ -38,19 +41,22 @@ body {
   font-family: GoogleSans-Regular;
   font-size: 13px;
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
 a,p{
   text-decoration: none;
 }
 li {
-  list-style-type: none;
+  list-style: none;
 }
 img {
   width: 100%;
 }
 .flex{
   display: flex;
+}
+.flex-bs100{
+  flex-basis:100% ;
 }
 .grid-2-12{
   display: grid;

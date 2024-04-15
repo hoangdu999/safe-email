@@ -2,7 +2,7 @@
   <div class="trash">
     <the-delete-box></the-delete-box>
     <div class="content-list">
-      <list-item v-for="(item,index) in Const.ListTrash" :key="index" :item="item" :index="index"></list-item>
+      <list-item v-for="(item,index) in Const.trash" :key="index" :item="item" :index="index"></list-item>
     </div>
   </div>
 </template>
@@ -12,7 +12,7 @@ import constants from '../../assets/js/constants';
 import TheDeleteBox from '../../components/deleteallbox/TheDeleteBox.vue';
 export default {
   components: { ListItem ,TheDeleteBox},
-  name: 'SafeEmailTheSent',
+  name: 'SafeEmailTheTrash',
 
   data() {
     return {

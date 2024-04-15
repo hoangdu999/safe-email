@@ -17,7 +17,7 @@ const routes = [
     component: TheTrash,
   },
   {
-    path: "/content/:listType/:itemId",
+    path: "/:listType/content/:itemId",
     name: "Content",
     component: Content,
   },

@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <the-delete-box></the-delete-box>
-    <div class="content-list">
-      <list-item v-for="(item,index) in Const.ListAll" :key="index" :item="item" :index="index"></list-item>
+      <div class="content-list">
+      <list-item v-for="(item,index) in Const.all" :key="index" :item="item" :index="index"></list-item>
     </div>
   </div>
 </template>

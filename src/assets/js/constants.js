@@ -19,123 +19,145 @@ const constants = {
       path: "/trash",
     },
   ],
-  ListAll: [
+  all: [
     {
       id: 1,
-      avt: "/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 2,
-      avt: "src/assets/img/header-avt.png",
-      name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
+      name: "Chandler",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 3,
-      avt: "src/assets/img/header-avt.png",
-      name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
+      name: "Raymond ",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 4,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 5,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 6,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
   ],
-  ListSent: [
+  sent: [
     {
       id: 1,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 2,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 3,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 4,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 5,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
       id: 6,
-      avt: "src/assets/img/header-avt.png",
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
   ],
-  ListTrash: [
+  trash: [
     {
-      avt: "src/assets/img/header-avt.png",
+      id: 1,
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
-      avt: "src/assets/img/header-avt.png",
+      id: 2,
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, ",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni. ",
       time: "00/00/00 July10",
     },
     {
-      avt: "src/assets/img/header-avt.png",
+      id: 3,
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
-      avt: "src/assets/img/header-avt.png",
+      id: 4,
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
     {
-      avt: "src/assets/img/header-avt.png",
+      id: 5,
+      avt: `${__HOME_BASE_URL__}src/assets/img/header-avt.png`,
       name: "Raymond Chandler",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aliquam velit libero at inventore consectetur quam veniam ad blanditiis numquam est ex consequatur reiciendis dicta nam maxime, exercitationem, eligendi itaque, pariatur neque illum cumque odit? Voluptas tempore in voluptates recusandae ratione unde odio quia enim velit! Nisi eum animi molestias harum tempore ratione est tenetur? Libero voluptates sint repudiandae pariatur temporibus nulla repellendus illum! Assumenda repellendus dolore labore a reiciendis expedita totam eaque numquam? Quos voluptatibus eos voluptatum sequi. Rem modi ducimus eius nobis at sit? Reprehenderit nam magni dolore ratione corporis rem recusandae aperiam fugit asperiores praesentium. Illo, magni.",
       time: "00/00/00 July10",
     },
   ],

@@ -54,7 +54,7 @@ export default {
       itemActive: 0,
       ListMenuItem :constants.Menu,
       IsShowFormNewEmail: false,
-      ListAll: constants.ListAll
+      ListAll: constants.all
     };
   },
   mounted() {

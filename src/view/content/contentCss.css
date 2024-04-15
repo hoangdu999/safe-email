@@ -1,0 +1,22 @@
+.back-icon{
+  font-size: var(--fonsize-backicon);
+  color: var(--bgr-header);
+  cursor: pointer;
+}
+.back-icon:hover{
+  color: var(--color-hoverbackicon);
+}
+.content-page-right{
+  width: 100%;
+}
+.content-page{
+}
+.content-list{
+  height: calc(100vh - var(--fonsize-backicon) - var(--height-header) - var(--paddingtop-content)*2) !important;
+  overflow-y:auto;
+  padding-right: 10px;
+}
+.content-page-left{
+}
+.content-header{
+}

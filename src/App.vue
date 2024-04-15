@@ -8,7 +8,6 @@
         <div class="content-container w-100">
           <router-view />
         </div>
-   
     </div>
   </div>
 </template>
