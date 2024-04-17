@@ -53,10 +53,14 @@
     overflow: hidden;    
     text-overflow: ellipsis; 
   }
+
+  .is-selected {
+    background-color: var( --bgr-menuitem);
+  }
   .delete-icon{
     font-size: 24px; 
     color: #bbb;
   }
-  .is-selected {
-    background-color: var( --bgr-menuitem);
+  .box-icon:hover .delete-icon{
+    color: var(--color-hoverbackicon);
   }

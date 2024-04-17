@@ -30,7 +30,9 @@
   --btn-primary: #5d5ba4;
   --height-deleteall:40px;
   --margin-deleteall:50px;
-  
+  --size-border:1px;
+  --fontsize-senticon: 50px;
+  --padding-content-header: 10px
 }
 * {
   margin: 0;
@@ -151,7 +153,6 @@ img {
 .h-30{
   height: 30px;
 }
-
 .hidden {
   display: none;
 }
@@ -176,4 +177,12 @@ img {
 }
 .hidden{
   display: none;
+}
+.sent-icon{
+  font-size: var(--fontsize-senticon);
+  color: var(--bgr-header);
+  cursor: pointer;
+}
+.sent-icon:hover{
+  color: var(--color-hoverbackicon);
 }

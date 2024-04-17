@@ -11,7 +11,7 @@
             {{ item.name }}
           </div>
           <div class="item-text" :style="{maxWidth:maxWWidthText}">
-            {{ item.content }}
+            {{ item.title }}
           </div>
         </div>
       </div>

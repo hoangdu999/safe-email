@@ -2,6 +2,7 @@
   <div class="ms-textarea-main">
       <label v-if="Title" :for="name" class="lable-textarea" :style="{fontSize : fontSizeTile + 'px'}" >{{title}} <span class="required">{{required ? "*" : "" }}</span></label>
       <textarea 
+          :ref="name"
           :type="type"
           :name="name"
           :tabindex="tabIndex"
@@ -36,10 +37,13 @@ props:{
   bodertextarea:String,
   title : String,
   tabIndex: Number,
-  name : String,
+  name: {
+    type: String,
+    default: "",
+  },
   type: {
-      type : String,
-      default : "text"
+    type : String,
+    default : "text"
   },
   placeholder: String,
   modelValue: String,
@@ -59,6 +63,9 @@ methods:{
   changeValue(event) {
     this.$emit("update:modelValue", event.target.value);
     this.$emit("message-error-input",this.name, "");
+  },
+  onFocus() {
+    this.$refs[this.name].focus();      
   },
 }
 };

@@ -26,10 +26,4 @@
 .list-item.active{
   color: var(--bgr-header);
 }
-.icon-box{
-  justify-content: end;
-  padding: 0px 20px 20px 20px;
-}
-.form-content{
-  padding-top: 20px;
-}
+

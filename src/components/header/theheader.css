@@ -3,6 +3,8 @@
   height: var(--height-header);
   padding: 20px 100px;
   width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .header-name{
   font-size: 300%;
