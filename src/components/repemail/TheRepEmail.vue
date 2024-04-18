@@ -1,27 +1,30 @@
 <template>
-  <m-pop-up
+  <div class="repeamil">
+    <m-pop-up
       :isShow="IsShowChange"
       @close-pop-up="closePopup"
       Widthpopup="var(--width-popup)"
       padding="0px 24px"
       borderRadiuspopup="40px"
       HeightHeader="80px"
-      backgroundColorheader="var(--bgr-header)"
+      backgroundColorheader="linear-gradient(to right, #e2e2e2, #99adf0)"
       fontSizeHeader="150%"
-      colorHeader="white"
+      colorHeader="black"
     >
     <template #header>Sent Email</template>
-    <div class="form-content">
+    <form class="form-content">
       <ms-input v-model="nameInput" ref="addressee" placeholder="To" borderinput="none" borderBottominput="1px solid #b4b5b9"></ms-input>
       <ms-input v-model="titleInput" name="titleInput" placeholder="Title" borderinput="none" borderBottominput="1px solid #b4b5b9"></ms-input>
       <m-textarea ref="content" heighttext="300px" bodertextarea="none"></m-textarea>
-    </div>
+    </form>
     <template #footer>
       <div class="icon-box flex">
           <font-awesome-icon :icon="['fas', 'paper-plane']" class="sent-icon"/>
       </div>
     </template>
   </m-pop-up>
+  </div>
+  
 </template>
 
 <script>

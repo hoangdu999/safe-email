@@ -1,6 +1,6 @@
 <template>
   <div v-if="isShow" class="m-pup-up-main"  >
-    <div class="m-pop-up" :style="{borderRadius:borderRadiuspopup}">
+    <div class="m-pop-up" :style="{borderRadius:borderRadiuspopup , backgroundColor:backgroundColor}">
       <header class="m-pop-up__header-popup" :style="{borderRadius:borderRadiuspopup ,backgroundColor:backgroundColorheader,height: HeightHeader,color:colorHeader,fontSize:fontSizeHeader}">
         <slot name="header"></slot>
       </header>
@@ -39,6 +39,9 @@ export default {
       default:'100%'
     },
     colorHeader:{
+      type:String,
+    },
+    backgroundColor:{
       type:String,
     },
     HeightHeader:{

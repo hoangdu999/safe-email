@@ -7,9 +7,9 @@
         class="back-icon"
         @click="BackToHome"
       />
-      <div class="list-name">{{this.listname}}</div>
+      <div class="list-name slide-in-right">{{this.listname}}</div>
       </div>
-      <div class="content-list">
+      <div class="content-list hidden-scrollbar">
         <list-item
           :Iscollapse="true"
           v-for="(item, index) in TypeList"
@@ -22,15 +22,15 @@
         ></list-item>
       </div>
     </div>
-    <div class="content-page-right">
-      <div class="content-header flex-jc">
+    <div class="content-page-right" >
+      <div class="content-header flex-jc fade-in-up ">
         <div class="content-header-left flex-jc">
           <div class="header-avt"><img :src="this.src" alt="" /></div>
           <div class="header-name flex item-center">{{ this.name }}</div>
         </div>
         <div class="header-time flex item-center">{{ this.time }}</div>
       </div>
-      <div class="content-text">
+      <div class="content-text hidden-scrollbar">
         <div class="text-title">
           {{ this.title }}
         </div>

@@ -7,8 +7,21 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faArrowLeftLong, faTrashCan, faPaperPlane);
+import {
+  faFacebookF,
+  faGithub,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+import { faGooglePlusG } from "@fortawesome/free-brands-svg-icons";
+library.add(
+  faArrowLeftLong,
+  faTrashCan,
+  faPaperPlane,
+  faGooglePlusG,
+  faFacebookF,
+  faGithub,
+  faLinkedinIn
+);
 
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import * as Icons from "@fortawesome/free-solid-svg-icons";

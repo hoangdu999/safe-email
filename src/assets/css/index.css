@@ -1,6 +1,8 @@
 @import url(./components/icon.css);
 @import url(./components/tool-tip.css);
 @import url(./responsive/index.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @font-face {
   font-family: GoogleSans-Regular;
   src: url(../fonts/notosans-regular.2cb88a13.woff2);
@@ -17,10 +19,69 @@
   font-family: GoogleSans-Semibold;
   src: url(../fonts/notosans-semibold.df3e6dc4.woff2);
 }
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.fade-out-down {
+  animation: fadeOutDown 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Di chuyển từ dưới lên */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  to {
+    opacity: 0;
+    transform: translateY(20px); /* Di chuyển từ trên xuống dưới */
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease forwards;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Di chuyển từ phải sang trái */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  to {
+    opacity: 0;
+    transform: translateX(-100%); /* Di chuyển từ trái qua phải */
+  }
+}
+
 :root {
-  --bgr-header : #aab6d0;
+  --bgr-login: linear-gradient(to right, #e2e2e2, #99adf0);  
+
   --height-header :120px;
-  --bgr-menuitem: #f3f4f6;
+  --bgr-list:rgba(255, 255, 255, 0.5);
+  --bgr-menuitem:rgba(220, 255, 255, 0.5);
   --paddingtop-content: 30px;
   --width-popup:900px;
   --fonsize-backicon: 53px;
@@ -38,12 +99,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
 }
 body {
   font-family: GoogleSans-Regular;
   font-size: 13px;
   width: 100%;
   /* position: relative; */
+
+  background: linear-gradient(270deg, #f06, #30cfd0, #fc5c7d, #c2e9fb);
+  background-size: 800% 800%;
+  animation: gradientBackground 15s ease infinite;
+
 }
 a,p{
   text-decoration: none;
@@ -185,4 +253,12 @@ img {
 }
 .sent-icon:hover{
   color: var(--color-hoverbackicon);
+}
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn trên WebKit browsers */
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

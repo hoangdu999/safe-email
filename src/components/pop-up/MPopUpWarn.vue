@@ -1,6 +1,6 @@
 <template>
   <div v-if="isShow" class="m-pup-up-main">
-    <div class="m-pop-up" :style="{ padding: padding, width: width }">
+    <div class="m-pop-up" :style="{ padding: padding, width: width , backgroundColor:backgroundColor}">
       <header class="m-pop-up__header">
         <div class="pop-up__title-default">{{titleName}}</div>
       </header>
@@ -37,6 +37,9 @@ export default {
     isIconClose: {
       type: Boolean,
       default: true,
+    },
+    backgroundColor:{
+      type:String,
     },
     padding: {
       type: String,

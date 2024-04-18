@@ -1,5 +1,5 @@
 <template>
-  <div class="content-deleteall flex" >
+  <div class="content-deleteall flex " >
     <div class="deleteall-text" @click="ShowMessDelete">Delete All</div>
     <m-pop-up-warn
     :isShow="IsShowMessDelete"

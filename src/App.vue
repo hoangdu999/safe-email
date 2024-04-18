@@ -1,13 +1,20 @@
 <template>
   <div>
-    <the-header />
-    <div class="content flex">
-        <div class="menu"  v-if="shouldHideSidebar">
-          <the-menu></the-menu>
-        </div>
-        <div class="content-container w-100">
-          <router-view />
-        </div>
+    <div v-if="!LoginRegister">
+      <the-header />
+      <div class="content flex">
+          <div class="menu"  v-if="shouldHideSidebar">
+            <the-menu></the-menu>
+          </div>
+          <div class="content-container w-100">
+            <transition name="fade" mode="out-in">
+              <router-view></router-view>
+            </transition>
+          </div>
+      </div>
+    </div>
+    <div v-else>
+      <router-view />
     </div>
   </div>
 </template>
@@ -34,6 +41,10 @@ export default{
       const loginRoutes = ['/','/sent','/trash']; 
       return loginRoutes.includes(this.$route.path);
     },
+    LoginRegister(){
+      const loginRoutes = ['/login-register']; 
+      return loginRoutes.includes(this.$route.path);
+    }
   }
   }
 </script>
@@ -45,4 +56,11 @@ export default{
 .menu{
   flex-basis: 25%;
 }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 </style>

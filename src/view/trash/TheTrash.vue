@@ -1,7 +1,7 @@
 <template>
   <div class="trash">
     <the-delete-box></the-delete-box>
-    <div class="content-list">
+    <div class="content-list hidden-scrollbar">
       <list-item v-for="(item,index) in Const.trash" :key="index" :item="item" :index="index"></list-item>
     </div>
   </div>

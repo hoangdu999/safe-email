@@ -1,5 +1,5 @@
 <template>
-  <li class="list-item" :key="index" @click="SelectItem(index)" :class="{ 'is-selected': IsSelected }">
+  <li class="list-item slide-in-right" :key="index" @click="SelectItem(index)" :class="{ 'is-selected': IsSelected }">
     <div class="list-box flex-jc"   :key="index" @click="ShowContent(item,index)" 
     >
       <div class="item-left flex">
@@ -27,6 +27,7 @@
     <m-pop-up-warn
       :isShow="IsShowMessDelete"
       @close-pop-up="IsShowMessDelete = false"
+      backgroundColor="white"
     >
       <template #content>
         <p class="warning__delete-content w-100">Xác Nhận Xóa Email!</p>
