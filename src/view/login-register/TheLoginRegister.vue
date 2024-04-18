@@ -46,7 +46,7 @@
               <input type="email" placeholder="Email">
               <input type="password" placeholder="Password">
               <a href="#">Forget Your Password?</a>
-              <button>Sign In</button>
+              <button @click="SignIn">Sign In</button>
           </form>
       </div>
       <div class="toggle-container ">
@@ -88,6 +88,9 @@ export default {
     },
     removeEventListener(){
       this.$refs.container.classList.remove("active");
+    },
+    SignIn(){
+      this.$router.push('/all');
     }
   },
   

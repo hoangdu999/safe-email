@@ -6,7 +6,7 @@ const constants = {
   Menu: [
     {
       text: "All Inboxes",
-      path: "/",
+      path: "/all",
     },
 
     {

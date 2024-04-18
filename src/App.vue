@@ -38,11 +38,11 @@ export default{
   },
   computed:{
     shouldHideSidebar() {
-      const loginRoutes = ['/','/sent','/trash']; 
+      const loginRoutes = ['/all','/sent','/trash']; 
       return loginRoutes.includes(this.$route.path);
     },
     LoginRegister(){
-      const loginRoutes = ['/login-register']; 
+      const loginRoutes = ['/']; 
       return loginRoutes.includes(this.$route.path);
     }
   }

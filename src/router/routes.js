@@ -5,7 +5,7 @@ import Content from "../view/content/TheContent.vue";
 import TheLoginRegister from "../view/login-register/TheLoginRegister.vue";
 const routes = [
   {
-    path: "/",
+    path: "/all",
     component: TheHome,
   },
   {
@@ -22,8 +22,12 @@ const routes = [
     component: Content,
   },
   {
-    path: "/login-register",
+    path: "/",
     component: TheLoginRegister,
+  },
+  {
+    path: "/login-register",
+    redirect: "/",
   },
 ];
 export default routes;
