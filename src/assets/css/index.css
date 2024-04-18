@@ -77,10 +77,11 @@
 }
 
 :root {
-  --bgr-login: linear-gradient(to right, #e2e2e2, #99adf0);  
+  /* --bgr-login: linear-gradient(to right, #e2e2e2, #99adf0);   */
 
   --height-header :120px;
   --bgr-list:rgba(255, 255, 255, 0.5);
+  --color-menu: rgb(163, 184, 229);
   --bgr-menuitem:rgba(220, 255, 255, 0.5);
   --paddingtop-content: 30px;
   --width-popup:900px;
@@ -106,9 +107,7 @@ body {
   font-family: GoogleSans-Regular;
   font-size: 13px;
   width: 100%;
-  /* position: relative; */
-
-  background: linear-gradient(270deg, #f06, #30cfd0, #fc5c7d, #c2e9fb);
+  background: linear-gradient(270deg, rgb(183, 203, 231), #a2bad7, #8eafc1, #b4c3e1);
   background-size: 800% 800%;
   animation: gradientBackground 15s ease infinite;
 

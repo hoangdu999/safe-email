@@ -24,11 +24,11 @@
       >
         <li
           class="list-item flex mb-25"
-          :class="itemActive == index ? 'active' : ''"
+          :class="{'active': itemActive === item.path}"
           :key="index"
-          @click="activeItem(index)"
+          @click="activeItem(item.path)"
         >
-          <div :class="itemActive == index ? 'circle' : ''"></div>
+          <div  :class="{'circle': itemActive === item.path}"></div>
           <div class="menu-text">
             {{ item.text }}
           </div>
@@ -61,20 +61,28 @@ export default {
   },
   data() {
     return {
-      itemActive: 0,
       ListMenuItem: constants.Menu,
       IsShowFormNewEmail: false,
       ListAll: constants.all,
+      itemActive: '',
     };
   },
   created() {
+    this.activeItem(this.$route.path);
   },
   mounted() {
     this.sum = this.ListAll.length;
   },
+  watch:{
+    filteredList() {
+      return this.ListMenuItem.filter(item => {
+        return this.$route.path.includes(item.path);
+      });
+    }
+  },
   methods: {
-    activeItem(index) {
-      this.itemActive = index;
+    activeItem(path) {
+      this.itemActive = path;
     },
     ShowFormNewEmailMethos() {
       this.IsShowFormNewEmail =true;

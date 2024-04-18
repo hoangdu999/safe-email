@@ -17,13 +17,13 @@
 .circle {
   width: 15px;          
   height: 15px;         
-  background-color: var(--bgr-list); 
+  background-color: var( --color-menu); 
   border-radius: 50%; 
   position: absolute;
   left: 123px;
   display: flex;
 }
 .list-item.active{
-  color: var(--bgr-list);
+  color: var( --color-menu);
 }
 

@@ -9,7 +9,7 @@
       />
       <div class="list-name slide-in-right">{{this.listname}}</div>
       </div>
-      <div class="content-list hidden-scrollbar">
+      <div class="content-list hidden-scrollbar ">
         <list-item
           :Iscollapse="true"
           v-for="(item, index) in TypeList"
@@ -101,6 +101,17 @@ export default {
         return this.listname = "Trash";
       }
     },
+    Back(){
+      if(this.$route.params.listType ==="all"){
+        return "/all";
+      }
+      if(this.$route.params.listType ==="sent"){
+        return  "/sent";
+      }
+      if(this.$route.params.listType ==="trash"){
+        return  "/trash";
+      }
+    },
     initContent() {
       const itemId = Number(this.$route.params.itemId);
       const item = this.TypeList.find((item) => item.id === itemId);
@@ -119,9 +130,9 @@ export default {
       this.title= item.title;
     },
     BackToHome() {
-      this.$router.push({
-        path: "/",
-      });
+      this.$router.push(
+       this.Back()
+      );
     },
   },
 };
