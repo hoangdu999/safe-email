@@ -30,19 +30,18 @@
     <m-pop-up-warn
     :isShow="IsShowMessDelete"
     @close-pop-up="IsShowMessDelete = false"
-    backgroundColor="white"
-  >
+    >
     <template #content>
-      <p class="warning__delete-content w-100">Xác Nhận Xóa Email!</p>
+      <p class="warning__delete-content w-100">Confirm Deletion Of This Email!</p>
     </template>
     <template #footer>
       <div class="warning__delete-btn flex">
         <div @click="IsShowMessDelete = false" class="mr-10">
-          <ms-button typeBtn="close">Không</ms-button>
+          <ms-button typeBtn="close">No</ms-button>
         </div>
         <div @click="deleteStack" 
         >
-          <ms-button @click="DeleteItem(this.IndexItem)">Có</ms-button>
+          <ms-button @click="DeleteItem(this.IndexItem)">Yes</ms-button>
         </div>
       </div>
     </template>

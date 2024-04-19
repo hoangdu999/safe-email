@@ -5,7 +5,9 @@
         <div class="pop-up__title-default">{{titleName}}</div>
       </header>
       <main class="m-pop-up__main w-100 flex">
-        <div class="warning__delete-icon" :class="iconTitleClass"></div>
+        <div class="warning__delete-icon">
+          <font-awesome-icon :icon="['fas', 'triangle-exclamation']" />
+        </div>
         <div class="warning__delete-content flex w-100">
           <div class="warning__delete-content-text">
             <slot name="content"/>
@@ -56,12 +58,9 @@ export default {
     },
     titleName: {
         type: String,
-        default: "Thông báo",
+        default: "Warning",
     },
-    iconTitleClass: {
-        type: String,
-        default: "icon-warn-big",
-    },
+  
     dataTipIcon: String,
 
   },

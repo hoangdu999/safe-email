@@ -15,7 +15,7 @@
     /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
 }
 .m-btn:hover{
-    background-color: var(--bgr-header);
+    background-color: var(--color-menu);
 }
 .m-btn:active{
     background-color: var(--bgr-active);

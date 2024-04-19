@@ -3,6 +3,7 @@
 @import url(./responsive/index.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @font-face {
   font-family: GoogleSans-Regular;
   src: url(../fonts/notosans-regular.2cb88a13.woff2);
@@ -107,10 +108,9 @@ body {
   font-family: GoogleSans-Regular;
   font-size: 13px;
   width: 100%;
-  background: linear-gradient(270deg, rgb(183, 203, 231), #a2bad7, #8eafc1, #b4c3e1);
+  background: linear-gradient(270deg, rgb(146, 172, 209), #7892b1, #93c3dd, #9eb2dc);
   background-size: 800% 800%;
   animation: gradientBackground 15s ease infinite;
-
 }
 a,p{
   text-decoration: none;

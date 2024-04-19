@@ -6,16 +6,16 @@
     @close-pop-up="IsShowMessDelete = false"
   >
     <template #content>
-      <p class="warning__delete-content w-100">Xác Nhận Xóa Tất Cả Email!</p>
+      <p class="warning__delete-content w-100">Confirm Deletion Of All Emails!</p>
     </template>
     <template #footer>
       <div class="warning__delete-btn flex">
         <div @click="IsShowMessDelete = false" class="mr-10">
-          <ms-button typeBtn="close">Không</ms-button>
+          <ms-button typeBtn="close">No</ms-button>
         </div>
         <div @click="deleteStack" 
         >
-          <ms-button @click="DeleteALlItem">Có</ms-button>
+          <ms-button @click="DeleteALlItem">Yes</ms-button>
         </div>
       </div>
     </template>

@@ -39,9 +39,15 @@
 .warning__delete-content{
     align-items: center;
     justify-content: center;
+    height: 70px;
 }
 .m-pop-up__header-popup{
     display: flex;
     align-items: center;
     padding:20px 24px;
+}
+.warning__delete-icon{
+    font-size: 50px;
+    color: rgb(232, 196, 36);
+    position: absolute;
 }
