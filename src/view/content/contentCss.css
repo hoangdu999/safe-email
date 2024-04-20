@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 .back-icon:hover{
-  color: var(--color-hoverbackicon);
+  color: var(--color-menu);
 }
 .content-page-right{
   width: 100%;

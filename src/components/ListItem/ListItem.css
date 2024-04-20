@@ -22,7 +22,7 @@
     cursor: pointer;
   }
   .list-item:hover{
-    background-color: var( --bgr-menuitem);
+    background-color:   #d1d4db;
   }
   .item-avt{
     width: 50px;
@@ -63,5 +63,5 @@
     color: #a7a7a7;
   }
   .box-icon:hover .delete-icon{
-    color: var(--color-hoverbackicon);
+    color: var(--color-menu);
   }

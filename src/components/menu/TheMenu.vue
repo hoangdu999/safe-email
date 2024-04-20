@@ -4,7 +4,7 @@
       <div class="menu-boxtop text-center">
         <div class="menu-boxtop-sentmail">
           <ms-button
-            backgroundColor="var(--bgr-header)"
+            backgroundColor="var(--color-menu)"
             border="none"
             class="white bd-radius20px mb-30"
             width="180px"
