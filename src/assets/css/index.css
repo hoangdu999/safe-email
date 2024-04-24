@@ -79,7 +79,7 @@
 
 :root {
   /* --bgr-login: linear-gradient(to right, #e2e2e2, #99adf0);   */
-
+  --bgr-body:rgb(174, 175, 176);
   --height-header :120px;
   --bgr-list:rgba(255, 255, 255, 0.5);
   --color-menu: rgb(146, 147, 149);
@@ -95,6 +95,7 @@
   --size-border:1px;
   --fontsize-senticon: 50px;
   --padding-content-header: 10px
+
 }
 * {
   margin: 0;
@@ -180,10 +181,10 @@ img {
 .mb-30{
   margin-bottom: 30px;
 }
-.ml-15{
+.ml-15px{
   margin-left: 15px;
 }
-.mr-10{
+.mr-10px{
   margin-right: 10px;
 }
 .mr-20{

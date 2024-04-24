@@ -10,7 +10,7 @@
     </template>
     <template #footer>
       <div class="warning__delete-btn flex">
-        <div @click="IsShowMessDelete = false" class="mr-10">
+        <div @click="IsShowMessDelete = false" class="mr-10px">
           <ms-button typeBtn="close">No</ms-button>
         </div>
         <div @click="deleteStack" 
